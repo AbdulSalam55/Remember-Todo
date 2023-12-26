@@ -1,5 +1,6 @@
 :root{
     --color-primary: #0078F3;
+    --color-secondary: #101050;
     --color-background-primary: #f1f1f1;
 
     --color-test: gold;
@@ -15,6 +16,13 @@
     src:  url('fonts/Poppins-Bold.woff2') format('woff2'),
           url('fonts/Poppins-Bold.woff') format('woff');
   }
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src:  url('fonts/Poppins-Regular.woff2') format('woff2'),
+          url('fonts/Poppins-Regular.woff') format('woff');
+  }
+ 
+
 
 html{
     font-size: 62.5%;     
@@ -25,10 +33,27 @@ body{
     background-color: var(--color-background-primary);
 }
 
-.page{
+h3{
+    font-family: Poppins-Regular;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.white{
+    color: white;
+}
+
+.homepage{
     display: inline-flex;
     flex-direction:column;
+    width: 100vw;
     height: 100vh;
+}
+.page--2{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--color-secondary);
 }
 
 
@@ -127,13 +152,27 @@ a{
     width: 2rem;
     margin-left: 5rem;
 }
+.icon-medium{
+    margin: 1rem 3rem;
+    padding: 0rem;
+    width: 4.3rem;
+   
+}
+.icon-large{
+    margin: 1rem 3rem;
+    padding: 0rem;
+    width: 25rem;
+   
+}
 
 .hero{
     display: inline-flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 100vh;
 }
+
 .hero__description h2{
     display: inline-flex;
     flex-direction: column;
@@ -157,7 +196,13 @@ a{
 .btn--primary{
     color: white;
     background-color: var(--color-primary);
+    transition: background-color;
 }
+.btn--primary:hover{
+    background-color:  #2a8ff5;
+
+}
+
 
 p{
     font-family: Poppins-Bold;
@@ -165,4 +210,30 @@ p{
 }
 .inline{
     display: inline;
+}
+
+/* # features list */
+.app-features{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: start;
+    height: 100vh;
+}
+ 
+
+.feature{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.7rem;
+}
+
+.float-decor{
+    display: inline-block;
+    position: relative;
+    right: 5rem;
+    top: 40rem;
+    margin: 0PX;
+    
 }
