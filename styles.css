@@ -54,9 +54,13 @@ body{
     font-family: Poppins-Bold;
     justify-content: center;
     align-items: center;
-    border: 2px solid #cccccc;
     width: 350px;
     height: 80px;
+}
+
+.main-heading:hover{
+    color: white;
+    background-color: black;
 }
 
 /* Navbar Menu   <flex> */
