@@ -1,0 +1,45 @@
+:root{
+    --color-primary: #0078F3;
+    --color-background-primary: #f1f1f1;
+
+    --color-test: gold;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src:  url('fonts/Poppins-Bold.woff2') format('woff2'),
+          url('fonts/Poppins-Bold.woff') format('woff');
+  }
+
+html{
+    font-size: 62.5%;     
+}
+
+body{
+    
+    background-color: var(--color-background-primary);
+}
+
+.page{
+    display: block;
+}
+
+.navbar-main{
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+}
+.logo{
+    display: inline-flex;
+    font-size: 3.5rem;
+    font-family: Poppins-Bold;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #cccccc;
+    width: 415px;
+    height: 100px;
+}
