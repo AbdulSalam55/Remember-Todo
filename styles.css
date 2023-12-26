@@ -43,3 +43,6 @@ body{
     width: 415px;
     height: 100px;
 }
+.primary--font{
+    color: var(--color-primary);
+}
