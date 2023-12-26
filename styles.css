@@ -40,7 +40,6 @@ body{
 /* Navbar Container */
 .navbar-main{
     display: inline-flex;
-    /* justify-content: space-between; */
     align-items: center;
     width: 100vw;
     height: 80px;
@@ -55,7 +54,7 @@ body{
     font-family: Poppins-Bold;
     justify-content: center;
     align-items: center;
-    border: 3px solid #cccccc;
+    border: 2px solid #cccccc;
     width: 350px;
     height: 80px;
 }
@@ -112,8 +111,54 @@ a{
     color: white;
 }
 
+.cta-watch-video{
+    display: flex;
+   
+    justify-content: start;
+    align-items: center;
+}
+
+.icon{
+    margin: 1rem;
+    width: 2rem;
+    margin-left: 5rem;
+}
+
 .hero{
     display: inline-flex;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
+}
+.hero__description h2{
+    display: inline-flex;
+    flex-direction: column;
+    width: 50rem;
+    font-family: Poppins-Bold;
+    font-size: 5rem;
+}
+
+.btn{
+    font-family: Poppins-Bold;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem 2rem;    
+}
+
+.hero-app{
+    margin-right: 15rem;
+}
+
+.btn--primary{
+    color: white;
+    background-color: var(--color-primary);
+}
+
+p{
+    font-family: Poppins-Bold;
+    font-size: 1.5rem;
+}
+.inline{
+    display: inline;
 }
