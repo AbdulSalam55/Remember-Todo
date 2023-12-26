@@ -7,6 +7,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     
 }
 @font-face {
@@ -25,24 +26,94 @@ body{
 }
 
 .page{
-    display: block;
+    display: inline-flex;
+    flex-direction:column;
+    height: 100vh;
 }
 
+
+
+.primary--font{
+    color: var(--color-primary);
+}
+
+/* Navbar Container */
 .navbar-main{
+    display: inline-flex;
+    /* justify-content: space-between; */
+    align-items: center;
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background-color: white;
 }
-.logo{
+
+
+/*   Logo  */
+.logo h1{
     display: inline-flex;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: Poppins-Bold;
     justify-content: center;
     align-items: center;
     border: 3px solid #cccccc;
-    width: 415px;
-    height: 100px;
+    width: 350px;
+    height: 80px;
 }
-.primary--font{
+
+/* Navbar Menu   <flex> */
+.navbar-menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.nav-item {
+    display: inline-flex;
+    font-family: Poppins;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 80px;
+    transition: font-family .15s ease, background .15s ease;
+
+}
+.nav-item:hover , .focus{
+    font-family: Poppins-Bold;
+    background-color: var(--color-background-primary);
+}
+
+.nav-group{
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+
+/*  call to action Butoon */
+.cta{
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    font-family: Poppins-Bold;
+    margin: 0rem 7rem;
+    width: 16rem;
+    height: 3.5rem;
+    background-color: white;
+    border: 2px solid var(--color-primary);
     color: var(--color-primary);
+    transition: background-color .17s ease, color .17s ease;
+}
+.cta:hover{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.hero{
+    display: inline-flex;
+    align-items: center;
+    height: 100vh;
 }
